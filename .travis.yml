@@ -30,7 +30,7 @@ deploy:
   upload-dir: image-customization
   acl: !ruby/string:HighLine::String public_read
   on:
-    repo: OpenROV/openrov-software-arduino
+    repo: OpenROV/openrov-image-customization
     all_branches: true
     condition: "($REAL_GIT_BRANCH = master )||($REAL_GIT_BRANCH = pre-release )||($REAL_GIT_BRANCH = stable)"
 
