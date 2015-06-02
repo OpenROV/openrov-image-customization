@@ -5,8 +5,35 @@ script:
 - echo real_get_branch $REAL_GIT_BRANCH
 - rm -rf OpenROV/build-*
 - 'fpm -f -m info@openrov.com -s dir -t deb -a armhf -n openrov-image-customization
+  -d htpdate
+  -d python-software-properties
+  -d python-configobj
+  -d python-jinja2
+  -d python-serial
+  -d gcc
+  -d g++
+  -d make
+  -d libjpeg8-dev
+  -d picocom
+  -d zip
+  -d unzip
+  -d vim
+  -d ethtool
+  -d avr-libc
+  -d arduino-core
+  -d automake
+  -d byacc
+  -d binutils-avr
+  -d bison
+  -d flex
+  -d autoconf
+  -d libftdi-dev
+  -d libusb-dev
+  -d samba
+  -d curl
+  -d mercurial
   -v $VERSION_NUMBER~$BUILD_NUMBER.`git rev-parse --short HEAD` --description ''OpenROV
-  Debian Image Customizations'' --after-install=./afterinstall.sh .=/opt/openrov/image-customization '
+  Debian Image Customizations'' --after-install=./afterinstall.sh --before-install=./beforeinstall.sh .=/opt/openrov/image-customization '
 - mkdir build
 - DEBFILE="`ls *.deb`"
 - cp *.deb build/openrov-customization_latest-${REAL_GIT_BRANCH}_armhf.deb
