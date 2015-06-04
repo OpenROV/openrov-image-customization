@@ -13,7 +13,6 @@ script:
   -d gcc
   -d g++
   -d make
-  -d libjpeg8-dev
   -d picocom
   -d zip
   -d unzip
