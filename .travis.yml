@@ -20,7 +20,6 @@ script:
   -d bison
   -d flex
   -d autoconf
-  -d samba
   -d curl
   -v $VERSION_NUMBER~$BUILD_NUMBER.`git rev-parse --short HEAD` --description ''OpenROV
   Debian Image Customizations'' --after-install=./afterinstall.sh --before-install=./beforeinstall.sh .=/opt/openrov/image-customization '
