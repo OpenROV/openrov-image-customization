@@ -1,6 +1,7 @@
 #!/bin/bash
 set -xe
-
+#temp disable
+exit 0
 cat /etc/network/interfaces | grep 'address 192.168.254.1' && exit 0
 
 ## fix network

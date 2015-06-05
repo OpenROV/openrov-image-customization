@@ -1,6 +1,8 @@
 #!/bin/bash
 set -xe
-echo -----------------------------
+#temp disable
+exit 0
+ -----------------------------
 echo Setting up network
 echo -----------------------------
 
