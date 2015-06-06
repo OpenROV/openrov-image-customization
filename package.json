@@ -1,6 +1,6 @@
 {
   "name": "openrov-image-customization",
-  "version": "30.0.0",
+  "version": "30.1.0",
   "description": "Suite of OpenROV projects that are deployed to the ROV",
   "repository": {
     "type": "git",
@@ -14,5 +14,12 @@
   "bugs": {
     "url": "https://github.com/OpenROV/openrov-software/issues"
   },
-  "homepage": "https://github.com/OpenROV/openrov-software"
+  "homepage": "https://github.com/OpenROV/openrov-software",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node installer.js"
+  },
+  "dependencies": {
+    "package-script": "~0.0.8"
+  },
 }
