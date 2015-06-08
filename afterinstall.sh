@@ -8,7 +8,7 @@ done
 
 
 pushd /opt/openrov/image-customization
-npm install --unsafe-perm
+/usr/bin/npm install --unsafe-perm
 popd
 
 
