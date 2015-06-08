@@ -6,7 +6,7 @@ mkdir /etc/update-motd.d/
 # change to new directory
 cd /etc/update-motd.d/
 # create dynamic files
-cp /opt/openrov/openrov-image-customization/motd/* .
+cp /opt/openrov/image-customization/motd/* .
 # make files executable
 chmod +x /etc/update-motd.d/*
 # remove MOTD file

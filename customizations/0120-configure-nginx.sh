@@ -2,7 +2,7 @@
 set -xe
 
 cd /etc/nginx/sites-enabled/
-cp /opt/openrov/openrov-image-customization/nginx/default default
+cp /opt/openrov/image-customization/nginx/default default
 
 echo "Setup a service to recreate nginx log folders on tmpfs"
 cat > /etc/init.d/prepare-dirs << __EOF__
