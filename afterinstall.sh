@@ -10,7 +10,7 @@ done
 pushd /opt/openrov/image-customization
 ls /usr/bin
 whereis npm
-/usr/bin/npm install --unsafe-perm
+#/usr/bin/npm install --unsafe-perm
 popd
 
 
