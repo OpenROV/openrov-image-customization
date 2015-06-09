@@ -6,6 +6,6 @@ if [ -f /etc/init.d/wetty ]; then
 fi
 
 echo "set the wetty startup service"
-ln -s /opt/openrov/openrov-image-customization/wetty.service /etc/init.d/wetty
-chmod +x /opt/openrov/openrov-image-customization/wetty.service
+ln -s /opt/openrov/image-customization/wetty.service /etc/init.d/wetty
+chmod +x /opt/openrov/image-customization/wetty.service
 update-rc.d wetty defaults
