@@ -15,8 +15,15 @@ npm --version
 
 # Working around current issue with root id qemu error with the package-script
 # /usr/bin/npm install --unsafe-perm
-/usr/bin/npm install wetty -g
 
+set +e
+
+until /usr/bin/npm install wetty -g
+do
+  sleep 0.1
+done
+
+set -e
 popd
 
 
