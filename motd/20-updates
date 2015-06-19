@@ -20,6 +20,7 @@
 #   with this program; if not, write to the Free Software Foundation, Inc.,
 #   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
+exit 0 #disabling, takes too long on login
 import sys
 import subprocess
 import apt_pkg

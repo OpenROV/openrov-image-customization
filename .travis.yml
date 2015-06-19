@@ -27,6 +27,7 @@ script:
   -d curl
   -d nodejs
   -d nginx-light
+  -d c9-core-installer
   -v $VERSION_NUMBER~$BUILD_NUMBER.`git rev-parse --short HEAD` --description ''OpenROV
   Debian Image Customizations'' --after-install=./afterinstall.sh --before-install=./beforeinstall.sh .=/opt/openrov/image-customization '
 - mkdir build

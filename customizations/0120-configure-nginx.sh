@@ -25,12 +25,12 @@ DIR=/var/log/nginx
 #
 # main()
 #
-case "${1:-''}" in
+case "\${1:-''}" in
   start)
     # create the /var/log/nginx needed by webserver
-    if [ ! -d ${DIR} ]; then
-      mkdir ${DIR}
-      chmod 755 ${DIR}
+    if [ ! -d \${DIR} ]; then
+      mkdir \${DIR}
+      chmod 755 \${DIR}
     fi
     ;;
   stop)
@@ -42,7 +42,7 @@ case "${1:-''}" in
   status)
    ;;
   *)
-   echo "Usage: $SELF start"
+   echo "Usage: \$SELF start"
    exit 1
    ;;
 esac
