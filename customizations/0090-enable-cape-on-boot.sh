@@ -1,8 +1,7 @@
 #!/bin/bash
 set -xe
-
-wget https://github.com/RobertCNelson/dtb-rebuilder/tarball/3.19.x
-tar xpvf 3.19.x
+wget https://github.com/RobertCNelson/dtb-rebuilder/tarball/3.14-ti
+tar xpvf 3.14-ti
 mv RobertCNelson-dtb-rebuilder-* /opt/dtb-rebuilder
 
 pushd /opt/dtb-rebuilder
