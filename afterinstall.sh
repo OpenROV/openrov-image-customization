@@ -38,5 +38,5 @@ if [ "$(stat -c %d:%i /)" != "$(stat -c %d:%i /proc/1/root/.)" ]; then
 else
   #flush all buffers to disk
   sync
-  blockdev --flushbufs /dev/root
+  #blockdev --flushbufs /dev/root
 fi

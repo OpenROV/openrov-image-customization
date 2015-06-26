@@ -2,7 +2,7 @@
 set -xe
 
 # create directory
-mkdir /etc/update-motd.d/
+mkdir -p /etc/update-motd.d/
 # change to new directory
 cd /etc/update-motd.d/
 # create dynamic files
