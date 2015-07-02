@@ -1,7 +1,6 @@
 #!/bin/bash
 set -xe
-#temp disable
-exit 0
+
 cat /etc/dhcp/dhclient.conf | grep 'fixed-address 192.168.254.1;' && exit 0
 ## fix dhcp
 cat >> /etc/dhcp/dhclient.conf << __EOF__

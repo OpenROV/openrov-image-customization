@@ -50,3 +50,6 @@ __EOF__
 
 chmod 0755 /etc/init.d/prepare-dirs
 update-rc.d prepare-dirs defaults 01 99
+
+sed -i 's/# Required-Start:    $local_fs $remote_fs $network $syslog $named/# Required-Start:    $local_fs $remote_fs $network $syslog $named $prepare-dirs/g' /etc/init.d/nginx
+update-rc.d nginx defaults
