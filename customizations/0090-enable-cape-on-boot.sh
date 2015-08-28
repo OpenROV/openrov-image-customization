@@ -2,6 +2,10 @@
 set -xe
 wget https://github.com/RobertCNelson/dtb-rebuilder/tarball/3.14-ti
 tar xpvf 3.14-ti
+if [ -d "/opt/dtb-rebuilder" ]; then
+  rm -rf /opt/dtb-rebuilder/
+fi
+
 mv RobertCNelson-dtb-rebuilder-* /opt/dtb-rebuilder
 
 pushd /opt/dtb-rebuilder
