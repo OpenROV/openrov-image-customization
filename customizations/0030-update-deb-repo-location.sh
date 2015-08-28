@@ -1,7 +1,7 @@
 #!/bin/bash
 set -xe
 
-if [ `find your/dir -prune -empty` ]
+if [ `find /etc/apt/sources.list.d -prune -empty` ]
 then
 exit 0
 else
