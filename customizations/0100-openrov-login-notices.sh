@@ -13,8 +13,6 @@ cat > /etc/issue << __EOF__
 
 Software Version 30.1.0 [master]
 
-rcn-ee.net console Debian Image 2015-05-08
-
 Support/FAQ: http://openrov.com
 
 default username:password is [rov:OpenROV]

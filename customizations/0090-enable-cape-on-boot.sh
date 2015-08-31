@@ -1,4 +1,8 @@
 #!/bin/bash
+
+#temporarily disable as we prep for the latest kernel
+exit 0
+
 set -xe
 wget https://github.com/RobertCNelson/dtb-rebuilder/tarball/3.14-ti
 tar xpvf 3.14-ti
