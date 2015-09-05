@@ -26,7 +26,6 @@ script:
   -d autoconf
   -d curl
   -d nodejs
-  -d nginx-light
   -d c9-core-installer
   -d device-tree-compiler
   -d avahi-daemon
