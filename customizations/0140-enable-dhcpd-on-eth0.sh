@@ -1,6 +1,8 @@
 #!/bin/bash
 set -xe
 
+exit 0 #dnsmasq currently not installed
+
 cat > /etc/dnsmasq.d/eth0-dhcp << __EOF__
 #disable DNS by setting port to 0
 #port=0

@@ -11,7 +11,7 @@ cat > /etc/issue << __EOF__
 \____/ .__/\__/_//_/_/|_|\____/|___/
   /_/
 
-Software Version 30.1.0 [master]
+Software Version 30.0.3 [pre-release]
 
 rcn-ee.net console Debian Image 2015-05-08
 

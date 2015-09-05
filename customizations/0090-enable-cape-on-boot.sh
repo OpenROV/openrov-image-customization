@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0 #need to double check the device tree on this image
 set -xe
 wget https://github.com/RobertCNelson/dtb-rebuilder/tarball/3.14-ti
 tar xpvf 3.14-ti
