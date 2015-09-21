@@ -53,7 +53,7 @@ deploy:
   region: us-west-2
   endpoint: bucket-name.s3-website-us-west-2.amazonaws.com
   local-dir: build
-  upload-dir: image-customization
+  upload-dir: jessie/image-customization
   acl: public_read
   on:
     repo: OpenROV/openrov-image-customization
