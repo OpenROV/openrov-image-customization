@@ -57,6 +57,8 @@ deploy:
   acl: public_read
   on:
     repo: OpenROV/openrov-image-customization
+    all_branches: true
+    condition: "($REAL_GIT_BRANCH = jessie)"    
 notifications:
   webhooks:
     urls:
