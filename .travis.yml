@@ -26,7 +26,6 @@ script:
   -d autoconf
   -d curl
   -d nodejs
-  -d nginx-light
   -d c9-core-installer
   -d device-tree-compiler
   -d avahi-daemon
@@ -58,7 +57,7 @@ deploy:
   on:
     repo: OpenROV/openrov-image-customization
     all_branches: true
-    condition: "($REAL_GIT_BRANCH = jessie)"    
+    condition: "($REAL_GIT_BRANCH = jessie)"
 notifications:
   webhooks:
     urls:
