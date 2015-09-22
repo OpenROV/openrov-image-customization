@@ -1,6 +1,6 @@
 #!/bin/bash
 set -xe
-
+exit 0 #not ready for mainline yet
 cd /etc/nginx/sites-enabled/
 cp /opt/openrov/image-customization/nginx/default default
 
