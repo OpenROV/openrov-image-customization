@@ -11,7 +11,7 @@ set -xe
 #!/bin/bash
 set -x
 set -e
-
+exit 0 #temp disable
 echo "Ensure samaba lock folder exists"
 mkdir -p /var/run/samba
 
