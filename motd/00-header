@@ -27,7 +27,7 @@ if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
         # Fall back to using the very slow lsb_release utility
         DISTRIB_DESCRIPTION=$(lsb_release -s -d)
 fi
-printf "╘══▒▓▓▓▒══╛"
+printf "╘══▒▓▓▓▒══╛\n"
 printf "    ▀Ω▀"
 printf "\n"
 printf "Host: $(hostname)"

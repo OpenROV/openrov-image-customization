@@ -22,7 +22,6 @@ until /usr/bin/npm install wetty -g
 do
   sleep 0.1
 done
-/usr/bin/npm install ungit -g
 
 set -e
 popd
