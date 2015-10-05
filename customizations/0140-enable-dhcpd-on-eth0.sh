@@ -1,11 +1,11 @@
 #!/bin/bash
 set -xe
 
-cat > /etc/dnsmasq.d/eth0-dhcp << __EOF__
+cat > /etc/dnsmasq.d/eth0_0-dhcp << __EOF__
 #disable DNS by setting port to 0
 #port=0
 
-interface=eth0
+interface=eth0:0
 #one address range
 dhcp-range=192.168.254.10,192.168.254.20
 
