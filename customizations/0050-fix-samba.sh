@@ -28,6 +28,7 @@ read only = No
 guest ok = Yes
 __EOF__
 
+sed -i 's|log/samba|log|g'  /etc/samba/smb.conf
 
 #testparm -s ../smb.conf.openrov > /etc/samba/smb.conf
 
