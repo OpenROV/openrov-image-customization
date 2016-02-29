@@ -18,10 +18,7 @@ npm --version
 
 set +e
 
-until /usr/bin/npm install wetty -g
-do
-  sleep 0.1
-done
+/usr/bin/npm install wetty -g
 
 set -e
 popd
