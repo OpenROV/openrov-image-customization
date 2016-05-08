@@ -1,8 +1,16 @@
 #!/bin/bash
 set -xe
 
+#This just makes sure a default cert exists so the nginx config does not blow up.
+make-ssl-cert generate-default-snakeoil --force-overwrite
+cp /etc/ssl/certs/ssl-cert-snakeoil.pem /etc/openrov/STAR_openrov_net.chained.crt
+cp /etc/ssl/private/ssl-cert-snakeoil.key /etc/openrov/star_openrov_net.key
+
 cd /etc/nginx/sites-enabled/
 cp /opt/openrov/image-customization/nginx/default default
+mkdir -p /etc/nginx/locations-enabled
+
+
 
 echo "Setup a service to recreate nginx log folders on tmpfs"
 cat > /etc/init.d/prepare-dirs << __EOF__
