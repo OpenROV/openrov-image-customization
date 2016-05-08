@@ -13,6 +13,6 @@ auto dummy0
 iface dummy0 inet static
 address 10.0.0.1
 netmask 255.255.255.0
-multicast
+post-up ifconfig dummy0 multicast
 
 __EOF__
