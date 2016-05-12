@@ -2,6 +2,7 @@
 set -xe
 
 #This just makes sure a default cert exists so the nginx config does not blow up.
+mkdir -p /etc/openrov
 make-ssl-cert generate-default-snakeoil --force-overwrite
 cp /etc/ssl/certs/ssl-cert-snakeoil.pem /etc/openrov/STAR_openrov_net.chained.crt
 cp /etc/ssl/private/ssl-cert-snakeoil.key /etc/openrov/star_openrov_net.key
