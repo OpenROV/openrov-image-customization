@@ -16,8 +16,8 @@
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
-	listen 443 ssl default_server;
-	listen [::]:443 ssl default_server;
+	listen 443 ssl http2 default_server;
+	listen [::]:443 ssl http2 default_server;
 
 	ssl_certificate /etc/openrov/STAR_openrov_net.chained.crt;
 	ssl_certificate_key /etc/openrov/star_openrov_net.key;
