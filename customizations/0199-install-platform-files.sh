@@ -9,7 +9,7 @@ echo "------------------------------------------"
 # Note: This is custom for each platform!
 cat <<__EOF__ > /opt/openrov/system/config/platform.conf
 {
-	"platform": "beaglebone"
+	"platform": "raspberrypi"
 }
 __EOF__
 

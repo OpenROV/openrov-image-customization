@@ -29,8 +29,3 @@ guest ok = Yes
 __EOF__
 
 sed -i 's|log/samba|log|g'  /etc/samba/smb.conf
-
-#testparm -s ../smb.conf.openrov > /etc/samba/smb.conf
-
-#echo "Disable samba startup on system startup"
-#systemctl disable samba.service
