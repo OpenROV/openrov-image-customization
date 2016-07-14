@@ -10,11 +10,9 @@ done
 pushd /opt/openrov/image-customization
 ls /usr/bin
 whereis npm
+
 # Double check the npm version (Must be 2.9.0 or higher)
 npm --version
-
-# Working around current issue with root id qemu error with the package-script
-# /usr/bin/npm install --unsafe-perm
 
 set +e
 
