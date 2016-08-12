@@ -22,6 +22,9 @@ server {
 	ssl_certificate /etc/openrov/STAR_openrov_net.chained.crt;
 	ssl_certificate_key /etc/openrov/star_openrov_net.key;
 
+    # disable unsupported ciphers
+    ssl_ciphers AESGCM:HIGH:!aNULL:!MD5;
+
 	# Redirect all non-SSL traffic to SSL.
 	if ($ssl_protocol = "") {
 		rewrite ^ https://$host$request_uri? permanent;
