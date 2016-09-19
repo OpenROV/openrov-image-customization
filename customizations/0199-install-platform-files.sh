@@ -7,7 +7,7 @@ echo "------------------------------------------"
 
 # Add platform.conf file to /opt/openrov/system/config/
 # Note: This is custom for each platform!
-if [ "$RESIN_PLATFORM" = "beaglebone" ]
+if [ "$RESIN_PLATFORM" = "beaglebone" ]; then
 platform = "beaglebone"
 else
 platform = "raspberrypi"
