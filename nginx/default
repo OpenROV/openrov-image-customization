@@ -27,7 +27,7 @@ server {
 
 	# Redirect all non-SSL traffic to SSL.
 	if ($ssl_protocol = "") {
-		rewrite ^ https://$host$request_uri? permanent;
+		rewrite ^ https://rov.openrov.net$request_uri? permanent;
 	}
 
 	root /var/www/html;
