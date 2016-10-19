@@ -1,5 +1,8 @@
 #!/bin/bash
 set -xe
+
+#No longer shipping with Samba installed
+exit 0 
 # Samba doesn't start on the chroot, we need to add an config section and reconfigure it, otherwise the openrov-samba-config packages failes to install
 #echo Fixing samba
 #sed -i '/interfaces =/a interfaces = lo' /etc/samba/smb.conf
