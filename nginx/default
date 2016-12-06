@@ -36,7 +36,7 @@ server {
 	index index.html index.htm index.nginx-debian.html;
 
 	server_name _;
-
-  include /etc/nginx/locations-enabled/*;
+        error_page 500 502 504 /custom_50x.html;        
+	include /etc/nginx/locations-enabled/*;
 
 }
