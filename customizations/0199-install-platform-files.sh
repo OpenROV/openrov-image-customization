@@ -14,7 +14,7 @@ cat <<__EOF__ > /opt/openrov/system/config/platform.conf
 __EOF__
 
 # Call the Installer for this platform
-node /opt/openrov/cockpit/src/system-plugins/platform-manager/Install.js
+NODE_PATH=/opt/openrov/cockpit/src/lib:$NODE_PATH node /opt/openrov/cockpit/src/system-plugins/platform-manager/Install.js
 
 # Make all scripts executable
 chmod +x /opt/openrov/system/scripts/*
